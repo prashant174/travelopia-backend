@@ -4,7 +4,7 @@ const travellerSchema = new mongoose.Schema({
     name:String,
     email:String,
     destination:String,
-    travellers:Number,
+    person:Number,
     budget:Number
     
 })
