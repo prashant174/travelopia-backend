@@ -7,6 +7,9 @@ require('dotenv').config()
 app.use(cors())
 app.use(express.json())
 
+app.get("/",(req,res)=>{
+  res.send("api working successfully")
+})
 app.use("/api",travellerRouter)
 
 let port=process.env.PORT||8000
